@@ -1,4 +1,6 @@
+
 /********************** ESTILOS BASICOS ***********************/
+
 body {
 	margin: 0;
 	font-family: 'Urbanist', sans-serif;	
@@ -29,7 +31,7 @@ strong {
   margin: 0 auto;
   text-align: center;   
   margin-bottom: 100px;
-  border: 1px #c7c8c4 solid; /* un detalle minusculo (se puede sacar)*/
+  border: 1px #c7c8c4 solid; 
 }
    
 #menu > div {
@@ -41,6 +43,7 @@ strong {
 	margin: 10px;
 	line-height: 5px;
 	font-size: 30px;
+    		
 	text-decoration: none;	
 }
 
@@ -48,18 +51,16 @@ strong {
 	text-decoration: none;
 	color: black;
 	font-size:20px;
-	font-weight:bold;
+	font-weight:bold;	
 }
 
-.menuItems > a:hover { /** se agrego **/
-	color: white;
-}
-
-div.menuItems:hover { /** se agrego **/
+.menuItems > a:hover { 
 	background-color: #A6341B; 
 	border-radius: 3px;
 	border: 2px #60371E solid;
-}
+	width: 90%;
+	color: white;
+}		
 
 .container {
 	width: 80%;
@@ -85,7 +86,7 @@ div.menuItems:hover { /** se agrego **/
 	margin-bottom: 50px;
 }
 
-.imagenCard { /** se agrego **/
+.imagenCard { 
 	border: 5px #A6341B solid;
 	border-radius: 8px;
 }
@@ -103,30 +104,39 @@ div.menuItems:hover { /** se agrego **/
 	width: 30%;
 	margin: 0 auto;
 	font-size: 20px;
-	border-radius: 4px; /*cambio*/
+	border-radius: 4px; 
 	background-color: #c7c8c4;
-	text-align: left; /* cambio */
+	text-align: left;
 	padding: 50px;
-	border: solid 1px #60371E; /*cambio */
+	border: solid 1px #60371E;
 
+}
+
+#submitContainer {
+	text-align: center;
 }
 
 #botonSubmit {
 	font-size: 110%;
-	color:white;
-	width: 100%; /*cambio*/
+	text-align: center;
+	width: 30%;	
 	padding:10px;
 	background-color:  #A6341B;
-	border-radius: 5px;
-	;
+	border-radius: 5px;	
 }
 
-input {    /** se agrego **/
+#botonSubmit:hover {
+	color:white;
+}
+
+
+input {   
 	padding: 10px;
 	border-radius: 4px;
 	border: solid 1px #60371E;
 	width: 95%;
 }
+
 textarea{   /** se agrego **/
 	border: solid 1px #60371E;
 	border-radius: 4px;
@@ -136,7 +146,7 @@ textarea{   /** se agrego **/
 /********************** ESTILOS FOOTER ***********************/
 
 footer {
-	width: 100%; /*cambio*/
+	width: 100%; 
 	height: 211px;
 	background-color: #60371E;
 	color: #d1bf91;
@@ -144,8 +154,31 @@ footer {
 }
 
 #container-footer {
-	margin-top: 100px;
-	padding: 80px;
+	margin-top: 80px;
+	padding-top: 60px;
+	padding-bottom: 0;	
 	text-align: center;
+	font-size:12px;
 
 }
+
+#listContainer {	
+	display: flex;
+	justify-content: center;
+	text-align: center;		
+} 
+
+#listContainer > a {
+	color:#d1bf91;
+	text-decoration: none;
+	list-style-type: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 17px;
+	padding-bottom: 30px;
+}
+
+#listContainer > a:hover {
+	color: #F9C743;
+}
+
